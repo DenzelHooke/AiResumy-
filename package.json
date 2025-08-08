@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "name": "airesume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "fastify": "^5.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "cd backend && tsc -p tsconfig.json",
+    "server": "cd backend/dist && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denzel h",
+  "license": "ISC",
+  "description": ""
+}
