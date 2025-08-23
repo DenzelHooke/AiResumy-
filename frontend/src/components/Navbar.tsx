@@ -1,16 +1,16 @@
 function Navbar() {
+   
     return (
         <>
             <div id="navbar">
                 <div className="logo">LOGO</div>
                 <div className="navOptionsWrapper">
-                    <div className="navPages">
-                        <ul>Home</ul>
-                        <ul>Dashboard</ul>
-                        <ul>Profile</ul>
-                    </div>
+                    <ul className="navPages">
+                        <li>Home</li>
+                        <li>Dashboard</li>
+                        <li>Profile</li>
+                    </ul>
                 </div>
-
             </div>
         </>
     )
