@@ -2,9 +2,17 @@
 
 import Fastify from 'fastify'
 import registerRoutes from './plugins/registerRoutes.js'
+import cors from "@fastify/cors"
+
 
 const server = Fastify({
     logger: true
+}).register(cors, {
+    // CHATGPT CORS SUGGESTION
+        origin: 'http://localhost:5173', // Specify the allowed origin(s)
+        methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+        allowedHeaders: ['Content-Type', 'Authorization'], // Allowed request headers
+        // credentials: true, // Set to true if you need to send cookies/auth headers
 })
 
 registerRoutes(server)

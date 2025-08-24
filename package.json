@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "fastify": "^5.4.0"
+    "@fastify/cors": "^11.1.0",
+    "fastify": "^5.4.0",
+    "npm": "^11.5.2"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
@@ -13,7 +15,7 @@
   },
   "scripts": {
     "build": "cd backend && tsc -p tsconfig.json",
-    "server": "cd backend/dist && node index.js",
+    "server": "npm run build && cd backend/dist && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Denzel h",
